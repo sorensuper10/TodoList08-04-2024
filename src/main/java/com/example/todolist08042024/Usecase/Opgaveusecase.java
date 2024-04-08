@@ -1,11 +1,13 @@
 package com.example.todolist08042024.Usecase;
 
 import com.example.todolist08042024.model.Opgave;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Service
 public class Opgaveusecase {
     ArrayList<Opgave> opgaveArrayList = new ArrayList<>();
     AtomicLong counter = new AtomicLong();
